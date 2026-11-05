@@ -41,5 +41,12 @@ Caso Alterado:
 ├── BITACORA.md              # Registro de predicciones previas a la ejecución
 ├── USO_IA.md                # Declaración transparente del uso de IA
 ├── entrega.json             # Metadatos del repositorio y commit evaluado
-└── requirements.txt         # Dependencias del proyecto
+└── README.md                # Resumen, cargas, casos, entornos y ejecucion del repositorio
 ```
+
+## Entorno y ejecución
+Abra la carpeta de la actividad en VS Code.
+Para un entorno propio: `python -m venv .venv`, active ese entorno y ejecute `python -m pip install -r requirements.txt`.
+En Windows puede ejecutar `.venv\Scripts\python.exe` sin cambiar la política de PowerShell. En Linux use `.venv/bin/python`.
+Ejecute `python -m pytest -q` y `python src/ejecutar.py`. Mediante estos comandos se obtiene el grafico  y la tabla de datos para las diferentes mallas.
+Contraste tres mallas y el caso BC_ALTERADO; interprete por qué puede cerrar equilibrio y representar otro problema.
